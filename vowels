@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String... args) {
+        Scanner b = new Scanner(System.in);
+        
+        System.out.print("Enter a character: "); // Prompt the user for input
+        char i = b.next().charAt(0); // Read a string and get the first character
+        
+        System.out.println("You entered: " + i); // Print the entered character
+        
+        // Check if the character is a vowel
+        if (i == 'a' || i == 'e' || i == 'i' || i == 'o' || i == 'u' ||
+            i == 'A' || i == 'E' || i == 'I' || i == 'O' || i == 'U') {
+            System.out.println("Yes, it's a vowel!");
+        } else {
+            System.out.println("No, it's not a vowel.");
+        }
+        
+        b.close(); // Close the Scanner
+    } 
+}
