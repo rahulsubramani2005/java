@@ -1,0 +1,16 @@
+ public class Main {
+    int year=2025;
+    public static void main(String... args) {
+        Main f =new Main();
+        if (f.year%4==0 || f.year==0){
+            System.out.println("leap year");
+        }
+        else{
+            System.out.println("Non leap year");
+        }
+        
+        
+    } 
+     
+ }
+     
