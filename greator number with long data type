@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String... args) {
+        Scanner g = new Scanner(System.in);
+        long a = g.nextLong();  // Change to long
+        long b = g.nextLong();  // Change to long
+        long c = g.nextLong();  // Change to long
+        
+        if (a > b && a > c) {
+            System.out.println("a is greater");
+        } else if (b > a && b > c) {
+            System.out.println("b is greater");
+        } else {
+            System.out.println("c is greater");
+        }
+        
+        g.close(); // Closing the scanner
+    }
+}
