@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    int sum=0;
+	    while(true){
+	        Scanner a=new Scanner(System.in);
+	        int b=a.nextInt();
+	        sum=sum + b;
+	        if(b==0){
+	            break;
+	        }
+	        
+	        
+	    }
+	    System.out.println(sum);
+	    
+	    
+	    
+	}
+}
