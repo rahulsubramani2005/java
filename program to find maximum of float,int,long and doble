@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    float min=Float.MAX_VALUE;
+	    float max=Float.MIN_VALUE;
+      int mi=Integer.MAX_VALUE;
+      int ma=Integer.MIN_VALUE;
+      long a=Long.MAX_VALUE;
+      long b=Long.MIN_VALUE;
+      double c=Double.MIN_VALUE;
+      double d=Double.MAX_VALUE;
+	    System.out.println(min);
+	    System.out.println(max);
+      System.out.println(mi);
+      System.out.println(ma);
+      System.out.println(a);
+      System.out.println(b);
+       System.out.println(c);
+        System.out.println(d);
+	
+	}
+}
