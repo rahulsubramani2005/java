@@ -1,21 +1,22 @@
+//reversing the pattern
 import java.util.*;
-public class Main
-{
-	public static void main(String[] args) {
-	    int sum=0;
-	    while(true){
-	        Scanner a=new Scanner(System.in);
-	        int b=a.nextInt();
-	        sum=sum + b;
-	        if(b==0){
-	            break;
-	        }
-	        
-	        
-	    }
-	    System.out.println(sum);
-	    
-	    
-	    
-	}
+public class Main{
+    public static void main(String...args){
+        Scanner a=new Scanner(System.in);
+        int b=a.nextInt();
+        
+        int c=0;
+        while(b>=10 )
+        {
+            int sum=0;
+            while(b>0){
+                c=b%10;
+            sum=sum+c;
+            b=b/10;
+            }
+            b=sum;
+        }
+        System.out.println(b);
+        
+    }
 }
