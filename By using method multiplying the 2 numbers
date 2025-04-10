@@ -2,7 +2,7 @@ import java.util.*;
 public class Rahul{
     public int rahul(int a,int b){
         int c=0;
-        return  c=a+b;
+        return  c=a*b;
        
     }
     public static void main(String...args){
