@@ -1,0 +1,14 @@
+import java.util.*;
+public class Rahul{
+    public int rahul(){
+System.out.println("Hi");
+        
+       
+    }
+    public static void main(String...args){
+        Rahul obj=new Rahul();
+        obj.rahul();
+        
+        
+    }
+}
