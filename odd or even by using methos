@@ -1,0 +1,24 @@
+import java.util.*;
+public class Rahul{
+    public int rahul(int a,int i){
+        int c=a%i;
+        return c;
+       
+    }
+    public static void main(String...args){
+        Rahul obj=new Rahul();
+        Scanner d=new Scanner(System.in);
+        int a=d.nextInt();
+        int i=2;
+        int result=obj.rahul(a,i);
+        if(result==0){
+            System.out.println("even");
+        }
+        else{
+            System.out.println("odd");
+        }
+        
+        
+        
+    }
+}
