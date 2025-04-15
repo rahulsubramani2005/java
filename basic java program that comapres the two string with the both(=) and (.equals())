@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner a=new Scanner(System.in);
+        String s1="ECE";
+        String s2="ECE";
+        String s3=new String("ECE");
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
+        System.out.println(s1==s2);
+        System.out.println(s1==s3);
+        System.out.print(s2.equals(s3));
+    }
+}
