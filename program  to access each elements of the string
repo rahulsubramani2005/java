@@ -1,0 +1,21 @@
+public class Main {
+    public static void main(String[] args) {
+        String name = "Rahul";
+        int index = 0;  // start from index 0
+
+        // Manually specify the string length (since we don't use .length())
+        int length = 5;  // "Rahul" has 5 characters
+
+        for (index = 0; index < length; index++) {
+            System.out.println("Character at index " + index + " = " + name.charAt(index));
+        }
+    }
+}
+
+
+output;
+Character at index 0 = R
+Character at index 1 = a
+Character at index 2 = h
+Character at index 3 = u
+Character at index 4 = l
