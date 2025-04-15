@@ -1,0 +1,32 @@
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner a=new Scanner(System.in);
+        String s1="ECE";
+        String s2="ECE";
+        String s3=new String("ECE").intern();
+        String s4="Rahul";
+        String s5="rahul";
+        String s6="ahul";
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
+        System.out.println(s1==s2);
+        System.out.println(s1==s3);
+        System.out.println(s2.equals(s3));
+        System.out.println(s4.equalsIgnoreCase(s5));
+        System.out.println(s4.compareTo(s5));
+        System.out.println(s4.contains("l"));
+    }
+}
+
+output:
+ECE
+ECE
+ECE
+true
+true
+true
+true
+-32
+true
