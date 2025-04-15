@@ -1,0 +1,10 @@
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner a=new Scanner(System.in);
+    
+        char A[]={'r','a','h','u','l'};
+        String str =new String(A);
+        System.out.println(A);
+    }
+}
