@@ -13,3 +13,14 @@ public class Main{
         System.out.print(s2.equals(s3));
     }
 }
+
+OUTPUT;
+
+ECE     // s1
+ECE     // s2
+ECE     // s3
+true    // s1 == s2: both point to the same string literal in the string pool
+false   // s1 == s3: s3 is created using 'new', so it’s a different object
+false   // s2 == s3: same reason, different object
+true   // it compares the actual content of the string not the memory location
+
