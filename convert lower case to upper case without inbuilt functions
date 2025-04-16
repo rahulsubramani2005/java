@@ -1,0 +1,24 @@
+/* convert lower case to uppercase and upperCase to lower case without inbuilt functions*/
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner a=new Scanner(System.in);
+        String b=a.nextLine();
+        StringBuilder r=new StringBuilder();
+        int c=b.length();
+        for(int i=0;i<c;i++){
+            char ch=b.charAt(i);
+            
+            if((ch>= 65 )&& (ch<=90)){
+                r.append((char)(ch+32));
+            }
+            else if(ch>=97 && ch<=122){
+                r.append((char)(ch-32));
+            }
+            else{
+                r.append(ch);
+            }
+        }
+        System.out.println(r);
+    }
+}
