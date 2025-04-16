@@ -1,0 +1,17 @@
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner a=new Scanner(System.in);
+        String b=a.nextLine();
+        int c=b.length();
+        StringBuffer s=new StringBuffer();
+        for(int i=c-1;i>=0;i--){
+            char ch=b.charAt(i);
+            s.append((char)(ch));
+            
+            
+            
+        }
+        System.out.println(s);
+    }
+}
