@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner a=new Scanner(System.in);
+        String b=a.nextLine();
+        int c=b.length();
+        for(int i=0;i<c;i++){
+            char ch=b.charAt(i);
+            int d=(int)ch;
+            System.out.println("Ascii value of "+ ch +" is " + d);
+            
+        }
+    }
+}
+
+OUTPUT;
+Ascii value of R is 82
+Ascii value of a is 97
+Ascii value of h is 104
+Ascii value of u is 117
+Ascii value of l is 108
