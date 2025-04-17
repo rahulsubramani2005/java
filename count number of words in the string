@@ -1,0 +1,31 @@
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        System.out.println("Enter your String");
+        String a=g.nextLine();
+        int b=a.length();
+        StringBuffer s=new StringBuffer();
+        int count=0;
+        for(int i=0;i<b;i++){
+            char ch=a.charAt(i);
+            if(ch==' '||ch==','){
+                count++;
+            }
+            else{
+                s.append((char)(ch));
+            }
+            
+        }
+        int d=count+1;
+        System.out.print("The number of words in the given string is: ");
+        System.out.println(d);
+    }
+}
+
+
+//input;
+   Enter your String:
+   Hello, this is Java.
+//output;
+  The number of words in the given string is: 4
