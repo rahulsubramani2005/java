@@ -1,0 +1,34 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt();
+        int c=0;
+        int count=0;
+        int z=0;
+        String binary=" ";
+        if(n==0){
+            System.out.println("binary  0");
+        }
+        while(n>0){
+            c=n%2;
+            n=n/2;
+            binary=binary+c;
+            if(c==1){
+                count++;
+                
+            }
+            else{
+                z++;
+            }
+        }
+        System.out.println("binary value of "+ n + " is "+ binary);
+        System.out.println("Number of zeros is " + z );
+        System.out.println("Number of ones is "+ count);
+   
+
+       
+    }
+}
