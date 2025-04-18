@@ -1,0 +1,44 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+    Scanner g=new Scanner(System.in);
+	int a=g.nextInt();
+	int c=0;
+	String b="";
+	while(a>0){
+		c=a%2;
+		a=a/2;
+		b=b+c;
+	}
+	int d=b.length();
+	if((b.charAt(0)=='1') && (b.charAt(d-1)=='1')){
+		    int count=0;
+			int o=0;
+
+		for(int i=1;i<d-1;i++){
+			;
+			char ch=b.charAt(i);
+			if(ch=='0'){
+				count++;
+			}
+			else{
+				o++;
+			}
+
+		}
+		if(count==d-2){
+			System.out.println("Extra Perfect Number");
+		}
+		else{
+			System.out.println("Not");
+		}
+		
+	}
+	else{
+		System.out.println("Not");
+	}
+	
+	    
+	}
+}
