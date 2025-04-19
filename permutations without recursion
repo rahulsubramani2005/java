@@ -1,0 +1,43 @@
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        String s=g.nextLine();
+        char[] a=s.toCharArray();
+        int n=s.length();
+        int[] c=new int[n];
+        for(int k=0;k<n;k++){
+            System.out.print(a[k]);
+        }
+        System.out.println();
+        int i=0;
+        while(i<n){
+            if(c[i]<i){
+                if(i%2==0){
+                    char temp=a[0];
+                    a[0]=a[i];
+                    a[i]=temp;
+                }
+                else{
+                    char temp=a[c[i]];
+                    a[c[i]]=a[i];
+                    a[i]=temp;
+                }
+                for(int k=0;k<n;k++){
+                    System.out.print(a[k]);
+                }
+                System.out.println();
+                c[i]++;
+                i=0;
+                
+                
+            }
+            else{
+                c[i]=0;
+                i++;
+                
+            }
+        }
+        
+    }
+}
