@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        int a=g.nextInt();
+       
+        numbers(a);
+    }
+    static void numbers(int a){
+        
+        if(a%2==0){
+            
+            System.out.println("even");
+        }
+        else{
+            System.out.println("odd");
+            
+        }
+        
+       
+        
+    }
+}
