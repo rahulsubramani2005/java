@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        int a=g.nextInt();
+        int ev=0;
+        int od=0;
+        numbers(a,ev,od);
+    }
+    static void numbers(int a,int ev,int od){
+        if(a==10){
+        System.out.println("even count"+ev);
+        System.out.println("odd count" +od);
+        return;
+        }
+        if(a%2==0){
+            ev++;
+            System.out.println(a);
+        }
+        else{
+            System.out.println(a);
+            od++;
+        }
+        numbers(a+1,ev,od);
+       
+        
+    }
+}
