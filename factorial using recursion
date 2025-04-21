@@ -1,0 +1,17 @@
+import java.util.*;
+public class Main{
+    static int factorial(int a){
+        if(a==0||a==1)
+            return 1;
+        
+        else
+            return a=a*factorial(a-1);
+        
+    }
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        int a=g.nextInt();
+        int fact=factorial(a); 
+        System.out.println(fact);
+    }
+}
