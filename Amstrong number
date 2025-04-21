@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        int a=g.nextInt();
+        int c=0;
+        int d=0;
+        int sum=0;
+        while(a>0){
+            c=a%10;
+            a=a/10;
+            d=c*c*c;
+            sum=sum+d;
+        }
+        System.out.println(sum);
+        if(a==sum){
+            System.out.println("Amstrong");
+        }
+        else{
+            System.out.println("Not Amstrong");
+        }
+    }
+}
