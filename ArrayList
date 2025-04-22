@@ -1,0 +1,29 @@
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        ArrayList<Integer> integer =new ArrayList<>();
+        ArrayList<String> names=new ArrayList<>();
+        integer.add(2);
+        integer.add(35);
+        integer.add(90);
+        System.out.println(integer+" ");
+        integer.remove(0);
+        System.out.println(integer+" ");
+        names.add("ece");
+        names.add("nandha");
+        names.add("student");
+        names.add("class");
+        System.out.println(names+" ");
+    }
+}
+
+/*output;
+[2, 35, 90] 
+[35, 90] 
+[ece, nandha, student, class] 
+
+
+        
+        
+        
+   
