@@ -1,0 +1,26 @@
+//program to check whether the number is Strong or Not strong
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        int a=g.nextInt();
+        int sum=0;
+        int c=0;
+        while(a>0){
+            c=a%10;
+            a=a/10;
+            int fact=0;
+            for(int i=1;i<c;i++){
+                fact=fact*i;
+            }
+            sum=sum+fact;
+        }
+        if(sum==a){
+            System.out.println("Strong Number");
+        }
+        else{
+            System.out.println("Not Strong Number");
+        }
+       
+    }
+}
