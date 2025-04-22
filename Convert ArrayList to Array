@@ -1,0 +1,26 @@
+import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        ArrayList<Integer> integer =new ArrayList<>();
+        
+        int a=g.nextInt();
+        for(int i=0;i<a;i++){
+            int num=g.nextInt();
+            integer.add(num);
+            
+        }
+        int [] h=new int[a];
+        for(int i=0;i<a;i++){
+             h[i]=integer.get(i);
+        }
+        for(int j:h){
+            System.out.print(j);
+        }}
+}
+        
+        
+        
+   
