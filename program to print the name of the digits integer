@@ -1,0 +1,59 @@
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        int a=g.nextInt();
+        int c=0;
+        int rev=0;
+        int d=0;
+        while(a>0){
+            c=a%10;
+            rev=rev*10+c;
+            a=a/10;
+        }
+        while(rev>0){
+            d=rev%10;
+            rev=rev/10;
+            
+            
+            switch(d){
+                case 1:
+                    System.out.print("one ");
+                    break;
+                case 2:
+                    System.out.print("two ");
+                    break;
+                case 3:
+                    System.out.print("three ");
+                    break;
+                case 4:
+                    System.out.print("four ");
+                    break;
+                case 5:
+                    System.out.print("five ");
+                    break;
+                case 6:
+                    System.out.print("six ");
+                    break;
+                case 7:
+                    System.out.print("seven ");
+                    break;
+                case 8:
+                    System.out.print("eight ");
+                    break;
+                case 9:
+                    System.out.print("nine ");
+                    break;
+                case 0:
+                    System.out.println("Zero ");
+                    break;
+                default:
+                    System.out.print("invalid");
+                    break;
+                
+                
+            }
+        }
+        System.out.println();
+    }
+}
