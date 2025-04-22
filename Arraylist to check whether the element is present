@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        ArrayList<Integer> integer =new ArrayList<>();
+        int a=g.nextInt();
+        for(int i=0;i<a;i++){
+            int num=g.nextInt();
+            integer.add(num);
+            
+        }
+        if(integer.contains(1)){
+            System.out.println("yes");
+        }
+        else{
+            System.out.println("no");
+        }
+        
+    }
+}
+        
+        
+        
+   
