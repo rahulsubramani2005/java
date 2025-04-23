@@ -1,0 +1,39 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String... args) {
+        Scanner g = new Scanner(System.in);
+        ArrayList<Float> rev = new ArrayList<>();
+
+        while (true) {
+            if (g.hasNextFloat()) {
+                float c = g.nextFloat();
+                rev.add(c);
+            } else if (g.hasNextInt()) {
+                System.out.println("Wrong Datatype...Bye");
+                break;
+            } else {
+                break;
+            }
+        }
+
+        if (!rev.isEmpty()) {
+            float max = rev.get(0);
+            int d = rev.size();
+
+            for (int i = 1; i < d; i++) {
+                float f = rev.get(i);
+                if (f > max) {
+                    max = f;
+                }
+            }
+
+            System.out.println("Maximum float: " + max);
+        } else {
+            System.out.println("Not valid");
+        }
+
+        g.close();
+    }
+}
