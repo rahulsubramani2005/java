@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        ArrayList<Integer>orginal=new ArrayList<>();
+        ArrayList<Integer>odd=new ArrayList<>();
+        ArrayList<Integer>even=new ArrayList<>();
+        int a=g.nextInt();
+        for(int i=0;i<a;i++){
+            int b=g.nextInt();
+            orginal.add(b);
+        }
+        System.out.println(orginal);
+        for(int j=0;j<a;j++){
+            int c=orginal.get(j);
+            if(c%2==0){
+                even.add(c);
+            }
+            else{
+                odd.add(c);
+            }
+        }
+        System.out.println("odd"+odd);
+        System.out.println("Even"+even);
+        }
+}
