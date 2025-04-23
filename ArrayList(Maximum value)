@@ -1,0 +1,39 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String... args) {
+        Scanner g = new Scanner(System.in);
+        ArrayList<Integer> rev = new ArrayList<>();
+
+        System.out.println("Enter integers (enter non-integer to stop):");
+
+        while (true) {
+            if (g.hasNextInt()) {
+                int c = g.nextInt();
+                rev.add(c);
+            } else {
+                break;
+            }
+        }
+
+        g.close();  // Always good to close the scanner
+
+        System.out.println("You entered: " + rev);
+
+        if (rev.isEmpty()) {
+            System.out.println("No integers were entered.");
+        } else {
+            int max = rev.get(0);  // Set max to the first element
+
+            for (int i = 1; i < rev.size(); i++) {
+                int f = rev.get(i);
+                if (f > max) {
+                    max = f;
+                }
+            }
+
+            System.out.println("Maximum value: " + max);
+        }
+    }
+}
