@@ -1,0 +1,53 @@
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        int r=g.nextInt();
+        int c=g.nextInt();
+        int sum=0;
+        int arr[][]=new int[r][c];
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                int a=g.nextInt();
+                arr[i][j]=a;
+            }
+        }
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                if((i+j)%2==0 ){
+                    sum=sum+arr[i][j];
+                }
+                    
+                else{
+                    continue;
+                }
+
+            }       
+        }
+        System.out.println("Total sum "+sum);
+        int s1=0;
+        int s2=0;
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                if(i==j){
+                    s1=s1+arr[i][j];
+                }
+                if((i+j)==2){
+                    s2=s2+arr[i][j];
+                }
+                else{
+                    continue;
+                }
+
+            }
+        }
+        int d=s1+s2;
+        System.out.println("Sum of Major Diagonal: "+s1);
+        System.out.println("Sum of Minor Diagonal: "+s2);
+        System.out.println("The Common element is: " +(d-sum) );
+        
+    
+
+
+    }
+}
