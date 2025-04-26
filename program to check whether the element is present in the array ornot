@@ -1,0 +1,36 @@
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        int r=g.nextInt();
+        int c=g.nextInt();
+        System.out.println("enter the element");
+        int z=g.nextInt();
+        int arr[][]=new int[r][c];
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                int a=g.nextInt();
+                arr[i][j]=a;
+            }
+        }
+        boolean yes=false;
+        int col=0;
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                if(arr[i][j]==z){
+                    yes=true;
+                    col=j;
+                    break;
+                }
+                else{
+                    continue;
+                }
+            }
+            if(yes){
+                System.out.println("The element is found in row "+(i+1)+" and column "+(col+1));
+                break;
+            }
+            
+        }
+    }
+}
