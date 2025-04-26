@@ -1,0 +1,33 @@
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        int r=g.nextInt();
+        int c=g.nextInt();
+        int arr[][]=new int[r][c];
+        int brr[][]=new int[c][r];
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                int a=g.nextInt();
+                arr[i][j]=a;
+            }
+        }
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c/2;j++){
+                int temp = arr[i][j];
+                arr[i][j] = arr[i][c - 1 - j];
+                arr[i][c - 1 - j] = temp;
+                
+            }
+            
+           
+        }
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                System.out.print(arr[i][j]+" ");
+            }
+            System.out.println();
+        }
+        
+    }
+}
