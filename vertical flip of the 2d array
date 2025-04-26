@@ -1,0 +1,40 @@
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        int r=g.nextInt();
+        int c=g.nextInt();
+        int arr[][]=new int[r][c];
+        int brr[][]=new int[c][r];
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                int a=g.nextInt();
+                arr[i][j]=a;
+            }
+        }
+        for(int i=0;i<r/2;i++){
+            for(int j=0;j<c;j++){
+                int temp=arr[i][j];
+                arr[i][j]=arr[r-1+i][j];
+                arr[r-1+i][j]=temp;
+                
+                
+            }
+            
+           
+        }
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                System.out.print(arr[i][j]+" ");
+            }
+            System.out.println();
+        }
+        
+    }
+}
+
+output;
+10 11 12
+7  8  9
+4  5  6
+1  2  3
