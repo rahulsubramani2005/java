@@ -1,0 +1,73 @@
+import java.util.*;
+class Software {
+    String Name;
+    String   eligiblity;
+    String   skills;
+    String    salary;
+
+void frontend(){
+    Name ="frontend developer";
+    eligiblity ="UG";
+    skills="HTML,CSS,JAVASCRIPT";
+    salary="5LPA - 10LPA";
+}
+void backend(){
+    Name ="Backend developer";
+    eligiblity ="UG";
+    skills="JAVASCRIPT,JAVA,C++,PYTHON,DSA";
+    salary="3LPA - 7LPA";
+}
+void DataAnalyst(){
+    Name ="DataAnalyst";
+    eligiblity ="UG";
+    skills="JAVASCRIPT,JAVA,C++,PYTHON,DSA";
+    salary="8LPA - 10LPA";
+}
+void display(){
+    System.out.println("Name:       "+Name);
+    System.out.println("eligiblity: "+eligiblity);
+    System.out.println("skills:     "+skills);
+    System.out.println("salary:     "+salary);
+}
+}
+public class job{
+    public static void main(String...args){
+        Software a=new Software();
+        System.out.println("enter your choice");
+        System.out.println("1.backend");
+        System.out.println("2.frontend");
+        System.out.println("3.DataAnalyst");
+        Scanner g=new Scanner(System.in);
+        int b=g.nextInt();
+        if(b==1){
+            a.frontend();
+            
+            a.display();
+        }
+        if(b==2){
+            a.backend();
+           
+            a.display();
+        }
+        if(b==3){
+            a.DataAnalyst();
+            
+            a.display();
+        }
+        else{
+            System.out.println("This job is not releted to Software Domain");
+        }
+    }
+}
+
+output;
+1
+Enter your choice:
+1. Frontend
+2. Backend
+3. Data Analyst
+1
+Name:       Frontend Developer
+Eligiblity: UG
+Skills:     HTML, CSS, JAVASCRIPT
+Salary:     5 LPA - 10 LPA
