@@ -1,0 +1,25 @@
+import java.util.*;
+class area{
+    int length;
+    int breadth;
+    area(int i,int j){ //parameterised constructor
+          length=i;
+          breadth=j;
+    }
+    
+    int display(){
+    return length*breadth;
+}
+}
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        // area mb = new area(5,10);
+        int length=g.nextInt();
+         int breadth=g.nextInt();
+         area mb = new area(length,breadth);
+        // area a=new area();
+        System.out.print(mb.display());
+        
+    }
+}
