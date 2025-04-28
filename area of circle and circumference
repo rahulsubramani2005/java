@@ -1,0 +1,23 @@
+import java.util.*;
+class circle{
+    int radius;
+    double area;
+    double circum;
+circle(int radius){
+    this.radius=radius;
+}
+void display(){
+    area=3.14*radius*radius;
+    circum=2*3.14*radius;
+    System.out.println("the area is:"+area);
+    System.out.println("the circumference is: "+circum);
+}
+}
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        int radius=g.nextInt();
+        circle h=new circle(radius);
+        h.display();
+    }
+}
