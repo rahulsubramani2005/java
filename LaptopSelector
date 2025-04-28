@@ -1,0 +1,74 @@
+import java.util.*;
+class Laptop{
+    String Name;
+    String pro;
+    int ram;
+    int rom;
+    int price;
+
+void RahulLaptop(){
+    Name="Lenovo ThinkPad";
+    pro="i7";
+    ram=16;
+    rom=512;
+    price=115000;
+}
+void VickyLaptop(){
+    Name="hp";
+    pro="i7";
+    ram=16;
+    rom=512;
+    price=35000;
+
+}
+void NaveenLaptop(){
+    Name="hp victus";
+    pro="i7";
+    ram=16;
+    rom=512;
+    price=35000;
+
+}
+
+}
+public class lap
+{
+    public static void main(String...args){
+        Laptop lappy=new Laptop();
+        Scanner g=new Scanner(System.in);
+        int choice=g.nextInt();
+        
+        lappy.VickyLaptop();
+        lappy.NaveenLaptop();
+        if(choice==1){
+        lappy.RahulLaptop();
+        System.out.println("RahulLaptop");
+        System.out.println(lappy.Name);
+        System.out.println(lappy.pro);
+        System.out.println(lappy.ram);
+        System.out.println(lappy.rom);
+        System.out.println(lappy.price);
+        
+        }
+        else if(choice==2){
+            lappy.VickyLaptop();
+            System.out.println("vickyLaptop");
+            System.out.println(lappy.Name);
+            System.out.println(lappy.pro);
+            System.out.println(lappy.ram);
+            System.out.println(lappy.rom);
+            System.out.println(lappy.price);
+            
+            }
+           else if(choice==3){
+                lappy.NaveenLaptop();
+                System.out.println("NaveenLaptop");
+                System.out.println(lappy.Name);
+                System.out.println(lappy.pro);
+                System.out.println(lappy.ram);
+                System.out.println(lappy.rom);
+                System.out.println(lappy.price);
+                
+                }
+       
+    }
