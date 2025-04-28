@@ -1,0 +1,25 @@
+import java.util.*;
+class money{
+    int orginal;
+    int withdrawal;
+    
+money(int or,int wi){
+    orginal=or;
+    withdrawal=wi;
+   
+}
+
+int display(){
+    return orginal-withdrawal;
+}
+}
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        int o=g.nextInt();
+        int w=g.nextInt();
+        money r1=new money(o,w);
+        System.out.println(r1.display());
+
+    }
+}
