@@ -1,0 +1,35 @@
+import java.util.*;
+class emp{
+    int id;
+    String Name;
+    int bs;
+    double c;
+    emp(int i,String na,int b){
+        id=i;
+        Name=na;
+        bs=b;
+
+    }
+    void calculate(){
+        c=bs+(0.10*bs)+(0.05*bs);
+        
+    }
+    void display(){
+        System.out.println("id:  "+id);
+        System.out.println("Name:  "+Name);
+        System.out.println("salary:  "+c);
+    }
+}
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        int e=g.nextInt();
+        g.nextLine();
+        String f=g.nextLine();
+        int h=g.nextInt();
+        emp a=new emp(e,f,h);
+        a.calculate();
+        a.display();
+        
+        }
+}
