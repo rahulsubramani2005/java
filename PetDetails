@@ -1,0 +1,40 @@
+import java.util.*;
+class dog{
+    String Species;
+    String Breed;
+    dog(String Sp,String Br){
+        this.Species=Sp;
+        this.Breed=Br;
+    }
+    void display(){
+        System.out.println("Species: "+Species);
+        System.out.println("Breed: "+Breed);
+
+    }
+}
+class cat{
+    String Specie;
+    String Breeds;
+    cat(String S,String B){
+        this.Specie=S;
+        this.Breeds=B;
+    }
+    void displays(){
+        System.out.println("Species: "+Specie);
+        System.out.println("color: "+Breeds);
+
+    }
+}
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        String a=g.nextLine();
+        String b=g.nextLine();
+        String c=g.nextLine();
+        String d=g.nextLine();
+        dog z=new dog(a,b);
+        cat y=new cat(c,d);
+        z.display();
+        y.displays();
+    }
+}
