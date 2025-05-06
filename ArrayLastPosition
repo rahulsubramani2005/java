@@ -1,0 +1,43 @@
+import java.util.*;
+
+class Main {
+    int a;
+    int c;
+    int[] arr;
+
+    Main(int a, int[] arr, int c) {
+        this.a = a;
+        this.c = c;
+        this.arr = arr;  // assign the entire array
+    }
+
+    void display() {
+        if (c <= a && c > 0) {
+            System.out.println(arr[a - c]);  // a - c gives the nth element from the end
+        } else {
+            System.out.println("Invalid position");
+        }
+    }
+}
+
+public class Ar {
+    public static void main(String... args) {
+        Scanner g = new Scanner(System.in);
+        int a = g.nextInt();  // size of the array
+        int c = g.nextInt();  // nth element from the end
+        int[] arr = new int[a];
+        for (int i = 0; i < a; i++) {
+            arr[i] = g.nextInt();  // read array elements
+        }
+        Main u = new Main(a, arr, c);
+        u.display();
+    }
+}
+input;
+5 2
+10 20 30 40 50
+
+
+
+output;
+40
