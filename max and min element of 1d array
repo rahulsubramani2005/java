@@ -1,0 +1,27 @@
+import java.util.*;
+public class rahul{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        int a=g.nextInt();
+        int arr[]=new int[a];
+        for(int i=0;i<a;i++){
+            int b=g.nextInt();
+            arr[i]=b;
+        }
+        int max=arr[0];
+        int min=arr[0];
+        for(int i=0;i<a;i++){
+            if(arr[i]>max){
+                max=arr[i];
+            }
+            else if(arr[i]<min){
+                min=arr[i];
+            }
+            else{
+                continue;
+            }
+        }
+        System.out.println("Max : "+max);
+        System.out.println("Min : "+min);
+    }
+}
