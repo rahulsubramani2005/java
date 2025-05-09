@@ -1,0 +1,23 @@
+import java.util.*;
+import java.util.Collections;
+public class rahul{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        int arr[]={1,5,3,4,2};
+        int brr[]={6,7,8,9,10};
+        ArrayList<Integer> b=new ArrayList<>();
+        int z=arr.length +brr.length;
+        for(int i=0;i<arr.length;i++){
+            b.add(arr[i]);
+        }
+        for(int i=0;i<brr.length;i++){
+            b.add(brr[i]);
+        }
+        Collections.sort(b);
+        Integer[] merg = b.toArray(new Integer[0]);
+        System.out.println(Arrays.toString(merg));
+        
+       
+
+    }
+}
