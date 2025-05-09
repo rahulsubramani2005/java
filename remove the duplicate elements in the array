@@ -1,0 +1,35 @@
+import java.util.*;
+public class rahul{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        int a=g.nextInt();
+        int arr[]=new int[a];
+        int brr[]=new int[a];
+        // To input the element in the array
+        for(int i=0;i<a;i++){
+            int b=g.nextInt();
+            arr[i]=b;
+        }
+        //sorting the array
+        Arrays.sort(arr);
+        int z=0;
+        //adding the unique element in to the new array
+        for(int i=0;i<a-1;i++){
+            if(arr[i]==arr[i+1]){
+                continue;
+            }
+            else{
+                brr[z]=arr[i];
+                z++;
+            }
+        }
+        brr[z]=arr[a-1];
+         // printing the array with unique elements
+        for(int j=0;j<z+1;j++){
+            System.out.print(brr[j]+" ");
+        }
+    
+
+
+    }
+}
