@@ -1,0 +1,20 @@
+import java.util.Stack;
+import java.util.*;
+public class rahul{
+    public static void main(String...args){
+        
+        Stack<Integer> a=new Stack<>();
+        boolean yes =true;
+        Scanner g=new Scanner(System.in);
+        while(yes){
+            int b=g.nextInt();
+            a.push(b);
+            if(b<0){
+                a.pop();
+                break;
+            }
+            
+        }
+        System.out.println(a);
+    }
+}
