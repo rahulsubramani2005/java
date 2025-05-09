@@ -1,0 +1,44 @@
+import java.util.*;
+public class rahul{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        int a=g.nextInt();
+        int arr[]=new int[a];
+        ArrayList<Integer> brr=new ArrayList<>();
+        for(int i=0;i<a;i++){
+            int z=g.nextInt();
+            arr[i]=z;
+        }
+        int max=arr[0];
+        int min=arr[0];
+        for(int i=1;i<a;i++){
+            if(arr[i]>max){
+                max=arr[i];
+            }
+            else if(arr[i]<min){
+                min=arr[i];
+            }
+           
+        }
+        
+        for(int i=0;i<a;i++){
+            if(arr[i]!=max && arr[i]!=min){
+                brr.add(arr[i]);
+            }
+        }
+        
+    int smax=brr.get(0);
+    int smin=brr.get(0);
+    int d=brr.size();
+    for(int i=1;i<d;i++){
+        if(brr.get(i)>smax){
+            smax=brr.get(i);
+        }
+        else if(brr.get(i)<smin){
+            smin=brr.get(i);
+        }
+    }
+    System.out.println("the second largest is: "+ smax);
+    System.out.println("the second smallest is: "+ smin);
+    }
+}
