@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class freq {
+    public static void main(String[] args) {
+        Scanner g=new Scanner(System.in);
+        String str1 = g.nextLine();
+        int count=0;
+        int a=str1.length();
+        int f[]=new int[256];
+        //count thefrequency of the characters
+        for(int i=0;i<a;i++){
+            char b=str1.charAt(i);
+            f[b]++;
+        }
+        //print only once for the character
+        boolean printed[]=new boolean[256];
+        for(int i=0;i<a;i++){
+            char c=str1.charAt(i);
+            if(!printed[c]){
+                System.out.println(c+"="+f[c]);
+                printed[c]=true;
+            }
+        }
+            
+            
+        }
+    }
