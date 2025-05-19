@@ -1,0 +1,17 @@
+//removing white spaces in the string
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        String a=g.nextLine();
+        int b=a.length();
+        StringBuffer c=new StringBuffer();
+        for(int i=0;i<b;i++){
+            char d=a.charAt(i);
+            if(d!=' '){
+                c.append(d);
+            }
+        }
+        System.out.println(c);
+    }
+}
