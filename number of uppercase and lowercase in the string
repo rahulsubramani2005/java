@@ -1,0 +1,27 @@
+/Program to find mnumber of uppercase and lowercase letters in the string
+/* 
+import java.util.*;
+public class str{
+    public static void main(String...args){
+        Scanner g = new Scanner(System.in);
+        String a=g.nextLine();
+        int d=a.length();
+        int uppercount=0;
+        int lowercount=0;
+        for(int i=0;i<d;i++){
+            char b=a.charAt(i);
+            if(b>=65 && b<=90){
+                uppercount++;
+            }
+            else if(b>=97 &&b<=122){
+                lowercount++;
+            }
+            else{
+                System.out.println(b+" is not an alphabet");
+            }
+        }
+        System.out.println("uppercase count "+uppercount);
+        System.out.println("lowercase count "+lowercount);
+    }
+    
+}*/
