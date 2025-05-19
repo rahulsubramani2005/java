@@ -1,0 +1,26 @@
+//remove the duplicate elements
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        String a=g.nextLine();
+        int b=a.length();
+        StringBuffer c=new StringBuffer();
+        for(int i=0;i<b;i++){
+            char d=a.charAt(i);
+            boolean found=false;
+            for(int j=0;j<c.length();j++){
+                if(d==c.charAt(j) ){
+                    found=true;
+                    break;
+                }
+               
+            }
+            if(!found){
+                c.append(d);
+            }
+        }
+        //c.append(a.charAt(b-1));
+        System.out.println(c);
+    }
+}
