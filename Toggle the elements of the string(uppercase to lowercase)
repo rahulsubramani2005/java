@@ -1,0 +1,26 @@
+//toggle the elements of the string(uppercase to lowercase)
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        String a=g.nextLine();
+        int b=a.length();
+        StringBuffer c=new StringBuffer();
+        for(int i=0;i<b;i++){
+            char d=a.charAt(i);
+            if(d>=65 && d<=90){
+                int e=d+32;
+                char f =(char)e;
+                c.append(f);
+                
+            }
+            else if(d>=97 && d<=122){
+                int e=d-32;
+                char f =(char)e;
+                c.append(f);
+                
+            }
+        }
+        System.out.println(c);
+    }
+}
