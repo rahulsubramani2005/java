@@ -1,0 +1,24 @@
+
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        String a=g.nextLine();
+        int b=a.length();
+        
+        for(int i=0;i<b;i++){
+            char c=a.charAt(i);
+            boolean yes=true;
+            for(int j=0;j<b;j++){
+                if(c==a.charAt(j)&& i!=j){
+                    yes=false;
+                }
+
+            }
+            if(yes){
+                System.out.println(c);
+                break;
+            }
+        }
+    }
+}
