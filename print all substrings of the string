@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main{
+    public static void main(String...args){
+        Scanner g=new Scanner(System.in);
+        String a=g.nextLine();
+        int count=0;
+        for(int i=0;i<a.length();i++){
+            for(int j=i+1;j<=a.length();j++){
+                //System.out.println(a.substring(i,j));
+                count++;
+            }
+        }
+        System.out.println("There are "+count+" substrings in a string");
+}
+}
