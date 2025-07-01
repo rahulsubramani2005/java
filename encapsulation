@@ -1,0 +1,32 @@
+class Bankaccount {
+    private String Accountnumber;
+    private double Balance;
+
+    public void setAccountnumber(String Acc) {
+        this.Accountnumber = Acc;
+    }
+
+    public String getAccountnumber() {
+        return this.Accountnumber;
+    }
+
+    public void setBalance(double ba) {
+        this.Balance = ba;
+    }
+
+    public double getBalance() {
+        return this.Balance;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Bankaccount a = new Bankaccount();
+
+        a.setAccountnumber("ABCD123");
+        a.setBalance(5000.00);  // Corrected: double value
+
+        System.out.println("Account Number: " + a.getAccountnumber());
+        System.out.println("Balance: ₹" + a.getBalance());
+    }
+}
