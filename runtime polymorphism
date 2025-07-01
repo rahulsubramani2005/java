@@ -1,0 +1,33 @@
+class Vechile{
+    public void Type(){
+        System.out.println("Vechile Type");
+    }
+}
+class bike extends Vechile{
+    public void Type(){
+        System.out.println("TWO-WHEELER");
+    }
+}
+class car extends Vechile{
+    public void Type(){
+        System.out.println("FOUR-WHEELER");
+    }
+}
+class lorry extends Vechile{
+    public void Type(){
+        System.out.println("HEAVY VECHILE");
+    }
+}
+public class Main{
+    public static void main(String...args){
+        Vechile v=new Vechile();
+        bike b=new bike();
+        car c=new car();
+        lorry l=new lorry();
+        v.Type();
+        b.Type();
+        c.Type();
+        l.Type();
+        
+    }
+}
