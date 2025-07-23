@@ -1,0 +1,29 @@
+import java.util.*;
+public class Main {
+    public static void main(String...args){
+        int[] arr={2,3,5,12,16,23,38,56,72,91};
+        Scanner g=new Scanner(System.in);
+        int target=g.nextInt();
+        int low=0;
+        int high=arr.length-1;
+        while(low<=high){
+            int mid=(low+high)/2;
+            if(arr[mid]==target){
+                System.out.println("the target is found at "+mid);
+                break;
+            }
+            else if(arr[mid]<target){
+                low=mid+1;
+                System.out.println("the "+ arr[mid] +"smaller than " +target+ "So" );
+                System.out.println("the element is at the right side of the midpoint");
+            }
+            else{
+                high=mid-1;
+                System.out.println("the "+ arr[mid] +"greater than " +target+ "So" );
+                System.out.println("the element is at the left side of the midpoint");
+            }
+        }
+
+    }
+    
+}
